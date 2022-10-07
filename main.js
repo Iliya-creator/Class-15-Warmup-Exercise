@@ -8,7 +8,13 @@ let numbers = [];
 
 // From there, add each and every number from the array.
 
-let newArr = [];
-    numbers.filter((value)=> {
-        value % 2 ==0;
-    })
+let newArr;
+numbers = numbers.filter((value) => {return value % 2 != 0});
+
+let sum = 0;
+sum = numbers.reduce(function(a, b){
+    return a + b;
+}, 0);
+
+console.log(newArr);
+console.log(sum);
